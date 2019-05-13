@@ -1,0 +1,155 @@
+/**************** regervation_part css start ****************/
+.calculate_part{
+    @include background("../img/calculate_bg.png");
+    .section_tittle{
+        text-align: left;
+        margin-bottom: 68px;
+        p{
+            color: $white_color;
+            text-transform: capitalize;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        h2{
+            color: $white_color;
+        }
+    }
+    .single_check_box {
+        margin-top: 26px;
+        @media #{$small_mobile}{
+            margin-top: 15px;
+        }
+        @media #{$large_mobile}{
+            margin-top: 5px;
+        }
+        @media #{$tab_device}{
+            margin-top: 5px;
+        }
+        @media #{$medium_device}{
+        
+        }
+    }
+    .input-group-text{
+        background-color: transparent;
+        border: 0px solid transparent;
+        padding: 0;
+        margin-right: 30px;
+        input[type="radio"]{
+            margin-right: 15px;
+            width: 18px;
+            height: 18px;
+            background-color: #fa0347 !important;
+        }
+          
+    }
+    .regervation_part_iner{
+        .form-control{
+            background-color: transparent;
+            color: $white_color !important;
+            border: 0px solid transparent;
+            border-bottom: 1px solid $white_color;
+            border-radius: 0px;
+            padding: .375rem 0rem;
+            font-size: 14px;
+            font-family: $font_stack_1;
+            margin-bottom: 45px;
+            padding-bottom: 15px;
+            height: 40px;
+            @media #{$small_mobile}{
+                margin-bottom: 25px;
+            }
+            @media #{$large_mobile}{
+                margin-bottom: 25px;
+            }
+            @media #{$tab_device}{
+                margin-bottom: 25px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+        
+    }
+    .gj-picker{
+        max-width: 300px !important;
+    }
+    a{
+        &:hover{
+            color: $white_color !important;
+        }
+    }
+    .btn_2{
+        &:hover{
+          box-shadow: 0px 10px 20px rgba(255, 255, 255  , .3);
+        }
+    }
+    ::placeholder {
+        color: #fff;
+      }
+      .input-group-text{p{
+        color: #fff;
+      }
+          
+      }
+      [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 33px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #fff;
+    margin-right: 29px;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background: #878d94;
+}
+[type="radio"]:checked + label:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background: #dbdbdb;
+    border: 1px solid #878d94;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fa0347;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+}

@@ -1,0 +1,110 @@
+/**************** banner part css start ****************/
+.banner_part{
+    height: 890px;
+    position: relative;
+    background-image: url(../img/banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    @media #{$small_mobile}{
+        height: 600px;
+    }
+    @media #{$large_mobile}{
+        height: 600px;
+    }
+    @media #{$tab_device}{
+        height: 600px;
+    }
+    @media #{$medium_device}{
+        height: 700px;
+    }
+    .banner_text{
+        position: absolute;
+        left: 20%;
+        top: 533px;
+        width: 100%;
+        z-index: 1;
+        @media #{$small_mobile}{
+            top: 400px;
+            left: 0;
+        }
+        @media #{$large_mobile}{
+            top: 400px;
+            left: 0;
+        }
+        @media #{$tab_device}{
+            top: 400px;
+            left: 0;
+        }
+        @media #{$medium_device}{
+            top: 450px;
+        }
+        &:after{
+            width: 150%;
+            height: 100%;
+            position: absolute;
+            content: "";
+            top: 0px;
+            z-index: 1;
+            right: 0;
+            background-color: #000;
+            opacity: 0.5;
+            left: 0;
+        }    
+        .banner_text_iner{
+            position: relative;
+            z-index: 1;
+            padding: 29px 120px;
+            z-index: 2;
+            @media #{$small_mobile}{
+                padding: 15px;
+            }
+            @media #{$large_mobile}{
+                padding: 15px;
+            }
+            @media #{$tab_device}{
+                padding: 15px;
+            }
+            @media #{$medium_device}{
+                padding: 25px;
+            }
+            h2{
+                font-size: 160px;
+                color: #fa0347;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 130px;
+                span{
+                    color: $white_color;
+                }
+                @media #{$small_mobile}{
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+                @media #{$large_mobile}{
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+                @media #{$tab_device}{
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+                @media #{$medium_device}{
+                    font-size: 80px;
+                    line-height: 80px;
+                }
+            }
+            p{
+                font-size: 21px;
+                text-transform: uppercase;
+                color: $white_color;
+                line-height: 22px;
+                margin-top: -10px;
+            }
+        } 
+    }
+    
+}
+  
+/**************** hero part css end ****************/

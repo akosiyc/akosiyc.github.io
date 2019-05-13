@@ -1,0 +1,166 @@
+/**************** blog part css start ****************/
+.team_member_section{
+    @media #{$small_mobile}{
+        padding-bottom: 50px;
+    }
+    @media #{$large_mobile}{
+        padding-bottom: 50px;
+    }
+    @media #{$tab_device}{
+    
+    }
+    @media #{$medium_device}{
+    
+    }
+    .single_blog_item {
+        @media #{$small_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 20px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        &:hover {
+            .single_blog_img {
+                &:after{
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.1;
+                }
+            }
+            .social_icon{
+                visibility: visible;
+                opacity: 1;
+                right: 0;
+                z-index: 2;
+            }
+        }
+    }
+    .single_blog_img{
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        &:after{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 20%;
+            height: 20%;
+            opacity: 0;
+            background-color: rgb(12, 16, 40);
+            content: "";
+            @include transform_time(0.5s);
+        }
+        .social_icon{
+            position: absolute;
+            right: -55px;
+            top: 35%;
+            padding: 20px 20px;
+            background-color: $black_color;
+            visibility: hidden;
+            opacity: 0;
+            @include transform_time(0.5s);
+            a{
+                color: $white_color;
+                margin: 7px 0px;
+                display: inline-block;
+            }
+            @media #{$large_mobile}{
+                top: 25%;
+            }
+            @media #{$tab_device}{
+                top: 25%;
+            }
+            @media #{$medium_device}{
+            
+            } 
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .single_blog_text{
+        padding: 40px 30px 0px;
+        border: 0px solid rgb(231, 231, 231);
+        background-color: $white_color;
+        text-align: center;
+        @media #{$small_mobile}{
+            padding: 20px 0px 0px;
+
+        }
+        @media #{$large_mobile}{
+            padding: 20px 0px 0px;
+        
+        }
+        @media #{$tab_device}{
+            padding: 25px 15px;
+        }
+        @media #{$medium_device}{
+        
+        }
+       
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            @media #{$small_mobile}{
+                font-size: 20px;
+
+            }
+            @media #{$large_mobile}{
+                font-size: 20px;
+            
+            }
+            @media #{$tab_device}{
+                font-size: 20px;
+            }
+            @media #{$medium_device}{
+            
+            }
+            a{
+                color: #0c1028;
+            }
+        }
+        .btn_3{
+            color: #2c3033;
+            margin-top: 28px;
+            text-transform: capitalize;
+        }
+    }
+}
+.single_team_member_section{
+    padding: 130px 0px 60px;
+    @media #{$small_mobile}{
+        padding: 70px 0px 40px;
+    }
+    @media #{$large_mobile}{
+        padding: 70px 0px 40px;
+    }
+    @media #{$tab_device}{
+        padding: 70px 0px 40px;
+    }
+    @media #{$medium_device}{
+        padding: 70px 0px 40px;
+    }
+    .single_blog_item{
+        margin-bottom: 62px;
+        @media #{$small_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 20px;
+        }
+        @media #{$medium_device}{
+            margin-bottom: 20px;
+        }
+    }
+}
+  

@@ -1,0 +1,122 @@
+/**************** exclusive_item_part css start ****************/
+.about_us{
+    position: relative;
+    z-index: 1;
+    
+    .single_feature_item{
+        margin-bottom: 60px;
+        @media #{$small_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+            width: 50%;
+            float: left;
+            padding: 0px 15px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 20px;
+            width: 50%;
+            float: left;
+            padding: 0px 15px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        &:hover{
+            .feature_item_icon{
+                span{
+                    margin-left: 15px;
+                }
+            }
+        }
+        .feature_item_icon{
+            position: relative;
+            z-index: 2;
+            &:after{
+                position: absolute;
+                content: "";
+                left: 0px;
+                top: -10px;
+                height: 65px;
+                width: 65px;
+                background-color: rgb(242, 247, 249);
+                z-index: -1;
+                border-radius: 15px;
+            }
+            span{
+                top: 0;
+                height: 65px;
+                width: 65px;
+                @extend %icon_bg;
+                display: inline-block;
+                color: #fff;
+                border-radius: 15% 15% 80% 15% / 15% 15% 30% 15%;
+                font-size: 35px;
+                text-align: center;
+                line-height: 65px;
+                margin-left: 12px;
+                margin-bottom: 30px;
+                @include transform_time(0.2s);
+                img{
+                    margin-bottom: 14px;
+                }
+            }
+           
+        }
+        h3{
+            font-size: 27px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            a{
+                color: $heading_color;
+            }
+            @media #{$small_mobile}{
+                font-size: 24px;
+            }
+            @media #{$large_mobile}{
+                font-size: 24px;
+            }
+            @media #{$tab_device}{
+                font-size: 24px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+    }
+    .amitated_icon_1{
+        position: absolute;
+        left: 0%;
+        top: 35%;
+    }
+    .amitated_icon_2{
+        position: absolute;
+        left: 14%;
+        top: 12%;
+    }
+    .amitated_icon_3{
+        position: absolute;
+        left: 36%;
+        bottom: 40%;
+    }
+    .amitated_icon_4{
+        position: absolute;
+        right: 13%;
+        top: 26%;
+    }
+    .amitated_icon_5{
+        position: absolute;
+        right: 1%;
+        top: 5%;
+    }
+    .rotated_icon{
+        span{
+            transform: rotate(45deg);
+        }
+    }
+}
+  
